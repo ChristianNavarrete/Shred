@@ -14,13 +14,13 @@
 		8526729D18C0071A00F91299 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8526729C18C0071A00F91299 /* main.m */; };
 		852672A118C0071A00F91299 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 852672A018C0071A00F91299 /* AppDelegate.m */; };
 		852672A418C0071A00F91299 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 852672A218C0071A00F91299 /* Main.storyboard */; };
-		852672A718C0071A00F91299 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 852672A618C0071A00F91299 /* ViewController.m */; };
 		852672A918C0071A00F91299 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 852672A818C0071A00F91299 /* Images.xcassets */; };
 		852672B018C0071A00F91299 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852672AF18C0071A00F91299 /* XCTest.framework */; };
 		852672B118C0071A00F91299 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8526729018C0071900F91299 /* Foundation.framework */; };
 		852672B218C0071A00F91299 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8526729418C0071900F91299 /* UIKit.framework */; };
 		852672BA18C0071A00F91299 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 852672B818C0071A00F91299 /* InfoPlist.strings */; };
 		852672BC18C0071A00F91299 /* ShredTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 852672BB18C0071A00F91299 /* ShredTests.m */; };
+		853850921966229600D41B6D /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 853850911966229600D41B6D /* MapViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +45,14 @@
 		8526729F18C0071A00F91299 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		852672A018C0071A00F91299 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		852672A318C0071A00F91299 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		852672A518C0071A00F91299 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		852672A618C0071A00F91299 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		852672A818C0071A00F91299 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		852672AE18C0071A00F91299 /* ShredTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShredTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		852672AF18C0071A00F91299 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		852672B718C0071A00F91299 /* ShredTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ShredTests-Info.plist"; sourceTree = "<group>"; };
 		852672B918C0071A00F91299 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		852672BB18C0071A00F91299 /* ShredTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShredTests.m; sourceTree = "<group>"; };
+		853850901966229600D41B6D /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		853850911966229600D41B6D /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +82,8 @@
 		8526728418C0071900F91299 = {
 			isa = PBXGroup;
 			children = (
+				853850901966229600D41B6D /* MapViewController.h */,
+				853850911966229600D41B6D /* MapViewController.m */,
 				8526729618C0071900F91299 /* Shred */,
 				852672B518C0071A00F91299 /* ShredTests */,
 				8526728F18C0071900F91299 /* Frameworks */,
@@ -115,8 +117,6 @@
 				8526729F18C0071A00F91299 /* AppDelegate.h */,
 				852672A018C0071A00F91299 /* AppDelegate.m */,
 				852672A218C0071A00F91299 /* Main.storyboard */,
-				852672A518C0071A00F91299 /* ViewController.h */,
-				852672A618C0071A00F91299 /* ViewController.m */,
 				852672A818C0071A00F91299 /* Images.xcassets */,
 				8526729718C0071900F91299 /* Supporting Files */,
 			);
@@ -249,7 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				852672A718C0071A00F91299 /* ViewController.m in Sources */,
+				853850921966229600D41B6D /* MapViewController.m in Sources */,
 				852672A118C0071A00F91299 /* AppDelegate.m in Sources */,
 				8526729D18C0071A00F91299 /* main.m in Sources */,
 			);
@@ -460,6 +460,7 @@
 				852672C118C0071A00F91299 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		852672C218C0071A00F91299 /* Build configuration list for PBXNativeTarget "ShredTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +469,7 @@
 				852672C418C0071A00F91299 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
